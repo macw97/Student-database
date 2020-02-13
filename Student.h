@@ -24,10 +24,9 @@ public:
 		cout << "Student Destructor activated\n";
 		for (size_t i = 0; i < Semestr_list.size(); i++)
 		{
-			//Semestr_list[i]->~Semestr();
+			
 			delete Semestr_list[i];
-			//CZY TO OZNACZA ¯E ZWALNIAM RÓWNIE¯ PAMIÊC SEMESTR_LIST 
-			//I NIE MUSZE WPISYWAÆ delete Semestr_list[i];
+			
 		}
 	}
 	string get_name() const;
